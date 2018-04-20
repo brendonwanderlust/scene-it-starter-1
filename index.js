@@ -12,7 +12,7 @@ $(function () {
         var urlEncodedSearchString = encodeURIComponent(searchString);
         $.ajax({
             method: "GET",
-            url: "http://www.omdbapi.com/?apikey=3430a78&s=" + urlEncodedSearchString,
+            url: "https://www.omdbapi.com/?apikey=3430a78&s=" + urlEncodedSearchString,
             success: function(response) {
                 var searchArray = response.Search;
                 movieData = response.Search;
